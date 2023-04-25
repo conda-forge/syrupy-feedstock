@@ -1,5 +1,5 @@
 {% set name = "syrupy" %}
-{% set version = "4.0.1" %}
+{% set version = "4.0.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/syrupy-{{ version }}.tar.gz
-  sha256: 60e3e94782444e0f978cd3b207de32f6da3199b15a2db32eab02f83cebb63ae8
+  sha256: 3c75ab6866580679b2cb9abe78e74c3e2011fffc6333651c6beb2a78a716ab80
 
 build:
   noarch: python
