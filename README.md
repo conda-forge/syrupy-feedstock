@@ -3,7 +3,7 @@ About syrupy-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/syrupy-feedstock/blob/main/LICENSE.txt)
 
-Home: https://github.com/tophat/syrupy
+Home: https://github.com/syrupy-project/syrupy
 
 Package license: Apache-2.0
 
