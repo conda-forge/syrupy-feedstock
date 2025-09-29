@@ -5,7 +5,7 @@ Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/syrupy-feedstoc
 
 Home: https://github.com/syrupy-project/syrupy
 
-Package license: Apache-2.0
+Package license: MIT
 
 Summary: Pytest Snapshot Test Utility
 
