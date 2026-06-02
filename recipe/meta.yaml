@@ -11,14 +11,14 @@ source:
 
 build:
   noarch: python
-  script: {{ PYTHON }} -m pip install . -vv
+  script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
   number: 0
 
 requirements:
   host:
     - python {{ python_min }}
     - pip
-    - poetry-core >=2.2.1
+    - hatchling
   run:
     - python >={{ python_min }},<4.0
     - pytest >=8.0.0
