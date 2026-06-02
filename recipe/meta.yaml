@@ -1,5 +1,5 @@
 {% set name = "syrupy" %}
-{% set version = "5.1.0" %}
+{% set version = "5.3.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,18 +7,18 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/syrupy-{{ version }}.tar.gz
-  sha256: df543c7aa50d3cf1246e83d58fe490afe5f7dab7b41e74ecc0d8d23ae19bd4b8
+  sha256: 449fb2997176e4ccae0e852ce23748239e1a224b4797a63173da02d6df682340
 
 build:
   noarch: python
-  script: {{ PYTHON }} -m pip install . -vv
-  number: 1
+  script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
+  number: 0
 
 requirements:
   host:
     - python {{ python_min }}
     - pip
-    - poetry-core >=2.2.1
+    - hatchling
   run:
     - python >={{ python_min }},<4.0
     - pytest >=8.0.0
