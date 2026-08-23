@@ -1,13 +1,13 @@
 {% set name = "syrupy" %}
-{% set version = "5.5.3" %}
+{% set version = "6.0.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/syrupy-{{ version }}.tar.gz
-  sha256: fa21e4ae77c89ec5abfca513338d8a7eb916da6618ca0f8db301476e0768e57a
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/syrupy-{{ version }}.tar.gz
+  sha256: bf4f5f662a7b23a9e5711bd5597e301cd09c00f31be5fa4095f79da7b0585f3d
 
 build:
   noarch: python
