@@ -1,5 +1,5 @@
 {% set name = "syrupy" %}
-{% set version = "7.0.2" %}
+{% set version = "7.0.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/syrupy-{{ version }}.tar.gz
-  sha256: b35d3efc800a3362c20f24026d1d116b91fcd4578a315745860ec234e023592c
+  sha256: 91f8b02111c3094a9a6a7eb80b6807f35a298f9d3c3d3cbf27d4e2c4c3ff8b1e
 
 build:
   noarch: python
